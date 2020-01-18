@@ -267,9 +267,7 @@ h3 {
 #clients,
 #stories,
 #contact {
-	padding: 50px;
-	padding-top: 30px;
-	padding-bottom: 0;
+	padding: 30px 50px 0;
 }
 
 /* conteneur des compétences et des clients */
@@ -303,7 +301,7 @@ h3 {
 }
 
 /* couleur des icônes font awesome */
-.fas {
+.fas,.fa {
 	vertical-align: top;
 	color: var(--main-color);
 	font-size: 2.2em;
@@ -322,7 +320,7 @@ h3 {
 .slidesComments {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(4, calc(40%-40px));
+	grid-template-columns: repeat(4, calc(40%- 40px));
 	grid-template-rows: minmax(150px, 1fr);
 }
 
@@ -369,9 +367,7 @@ h3 {
 	padding: 1em 4em 1em 4em;
 	border-radius: 10px;
 	color: var(--main-text-color);
-	background: white url("../images/quote.png");
-	background-repeat: no-repeat;
-	background-position: 8% 60%;
+	background: white url("../images/quote.png") no-repeat 8% 60%;
 	background-size: 1.2em;
 }
 
@@ -430,10 +426,8 @@ h3 {
 
 /* indicateurs du système de scroll js */
 .indicators button {
-	padding: 0.3em;
-	padding-left: 1em;
-	padding-right: 1em;
-
+	padding: 0.3em 1em;
+	outline: none;
 	border: none;
 	margin-left: 0.5em;
 	margin-right: 0.5em;

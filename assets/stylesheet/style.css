@@ -606,6 +606,7 @@ input[type=submit] {
 
 /* ronds à cliquer */
 input[type=radio] {
+	outline: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;

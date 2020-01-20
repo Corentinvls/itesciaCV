@@ -279,6 +279,7 @@ h3 {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+
 @media (max-width: 1120px) {
 	/* on aligne et centre le contenu si la page est sur mobile */
 	#skillGrid {
@@ -487,6 +488,12 @@ h3 {
 	filter: grayscale(0%);
 	transform: scale(1.1);
 	opacity: 100%;
+}
+.resize{
+	transform: scale(0.6);
+}
+.resize:hover{
+	transform: scale(0.7)!important;
 }
 
 /* si la fenêtre est trop petite on passe les clients en trop sur la ligne du dessous */

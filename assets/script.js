@@ -29,9 +29,10 @@ function showClientsDivs(n) {
     x[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " activeSliderIndicator";
 }
+
 /*------ Section nombre pour histoire vrai ------*/
 
-const d1 = new Date(2019,9,9);
+const d1 = new Date(2019, 9, 9);
 const d2 = new Date();
 const dDiff = new Date(d2 - d1);
 //dif en jour
@@ -39,13 +40,11 @@ let nbDay = (dDiff.getTime() / 86400000);
 //nombre d'heure avant d'avoir intégrer itescia les vancances
 let hcode = 80;
 
-while(nbDay>=1){
-    for (let i=0; i<=6; i++){
-        if(i!==0 && i!==6){
+while (nbDay >= 1) {
+    for (let i = 0; i <= 6; i++) {
+        if (i !== 0 && i !== 6) {
             hcode += 8;
-            console.log(hcode);
         }
-
     }
     nbDay -= 6;
 }

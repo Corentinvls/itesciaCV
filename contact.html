@@ -13,99 +13,95 @@
     <script src="https://kit.fontawesome.com/a316a741dd.js" crossorigin="anonymous"></script>
     <!-- icones -->
 
-    <link rel="icon" type="image/png" href="assets/images/mafavicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/mafavicon.png"/>
     <link rel="manifest" href="/site.webmanifest">
     <!-- icône du site -->
     <title>Contactez moi</title>
 </head>
 
 <body>
-    <div id="page">
-        <nav>
-            <div id="logo">
-                <img src="assets/images/favicon-32x32.svg" alt="Logo" id="icon">
-                <span id="name"><strong>Corentin</strong> Vallois</span>
+<div id="page">
+    <nav>
+        <div id="logo">
+            <img src="assets/images/favicon-32x32.svg" alt="Logo" id="icon">
+            <span id="name"><strong>Corentin</strong> Vallois</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div id="headerContent">
+            <h1>Contactez moi</h1>
+        </div>
+    </header>
+
+    <section id="contact">
+
+        <form method="POST" id="formContact">
+            <h2 id="titleContact">Vos coordonnées :</h2>
+
+            <div class="contactContent">
+                <input type="text" id="nom" name="nom" placeholder="Nom, prénom" required>
+
+                <input type="text" id="Entreprise" name="Entreprise" placeholder="Entreprise">
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <input type="tel" id="telephone" name="telephone" placeholder="Telephone" required>
             </div>
 
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="" class="active">Contact</a></li>
-            </ul>
-        </nav>
 
-        <header>
-            <div id="headerContent">
-                <h1>Contactez moi</h1>
+            <h2>Méthode de communication préférée :</h2>
+            <div class="contactContent">
+                <div id="communicationType">
+                    <input type="radio" id="mail" name="method" checked><label for="mail">Email</label>
+                    <input type="radio" id="sms" name="method"><label for="sms">SMS</label>
+
+                </div>
             </div>
-        </header>
-
-        <section id="contact">
-
-            <form method="POST" id="formContact">
-                <h2 id="titleContact">Vos coordonnées :</h2>
-
-                <div class="contactContent">
-                    <input type="text" id="nom" name="nom" placeholder="Nom, prénom" required>
-
-                    <input type="text" id="Entreprise" name="Entreprise" placeholder="Entreprise">
-
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-
-                    <input type="tel" id="telephone" name="telephone" placeholder="Telephone" required>
-                </div>
 
 
-
-
-
-                <h2>Méthode de communication préférée :</h2>
-                <div class="contactContent">
-                    <div id="communicationType">
-                        <input type="radio" id="mail" name="method" checked><label for="mail">Email</label>
-                        <input type="radio" id="sms" name="method"><label for="sms">SMS</label>
-
-                    </div>
-                </div>
-
-
-                <h2>Message :</h2>
-                <div class="contactContent">
-                    <select id="object" name="object">
-                        <!-- Possibilité d'utiliser un optiongroup pour le label -->
-                        <!-- mais de cette manière affiche un message par défaut -->
-                            <option value="label" disabled selected>Objet de votre message</option>
-                            <option value="employemment">Offre d'emploi</option>
-                            <option value="mission">Offre de mission</option>
-                            <option value="advice">Demande de conseil</option>
-                            <option value="Autre">Autre</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <textarea id="msg" name="userMessage" placeholder="Votre message"></textarea>
-                </div>
-
-            </form>
-
-            <div id="wrapBouton">
-                <input type="submit" form="formContact" id="envoi">
+            <h2>Message :</h2>
+            <div class="contactContent">
+                <select id="object" name="object">
+                    <!-- Possibilité d'utiliser un optiongroup pour le label -->
+                    <!-- mais de cette manière affiche un message par défaut -->
+                    <option value="label" disabled selected>Objet de votre message</option>
+                    <option value="employemment">Offre d'emploi</option>
+                    <option value="mission">Offre de mission</option>
+                    <option value="advice">Demande de conseil</option>
+                    <option value="Autre">Autre</option>
+                </select>
             </div>
-        </section>
 
 
+            <div>
+                <textarea id="msg" name="userMessage" placeholder="Votre message"></textarea>
+            </div>
+
+        </form>
+
+        <div id="wrapBouton">
+            <input type="submit" form="formContact" id="envoi">
+        </div>
+    </section>
 
 
-        <footer>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/corentin-vallois/">LinkedIn</a></li>
-                <li><a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme">Itescia</a></li>
-                <li><a href="https://codingfactory.fr">Coding Factory</a></li>
-            </ul>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/corentin-vallois/">LinkedIn</a></li>
+            <li><a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme">Itescia</a>
+            </li>
+            <li><a href="https://codingfactory.fr">Coding Factory</a></li>
+        </ul>
 
-            <span id="copyright">©2020 Tous droits réservés</span>
-        </footer>
-    </div>
+        <span id="copyright">©2020 Tous droits réservés</span>
+    </footer>
+</div>
 </body>
 
 </html>

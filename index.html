@@ -8,223 +8,225 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a316a741dd.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="assets/images/mafavicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/mafavicon.png"/>
     <link rel="manifest" href="/site.webmanifest">
     <title>Corentin Vallois</title>
 </head>
 
 <body>
-    <!-- Pour avoir cet effet de page blanche au dessus du fond -->
-    <div id="page">
-        <nav>
-            <!-- logo en haut à gauche -->
-            <div id="logo">
-                <img src="assets/images/favicon-32x32.svg" alt="Logo" id="icon">
-                <span id="name"><strong>Corentin</strong> Vallois</span>
+<!-- Pour avoir cet effet de page blanche au dessus du fond -->
+<div id="page">
+    <nav>
+        <!-- logo en haut à gauche -->
+        <div id="logo">
+            <img src="assets/images/favicon-32x32.svg" alt="Logo" id="icon">
+            <span id="name"><strong>Corentin</strong> Vallois</span>
+        </div>
+
+        <!-- liste en haut à droite -->
+        <ul>
+            <li><a href="" class="active">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Partie avec la photo et le nom de la personne -->
+    <header>
+        <div id="headerContent">
+            <div id="headerPhoto">
+                <img src="assets/images/headshot.png" alt="Photo" id="photo">
+            </div>
+            <div id="headerText">
+                <h1>Développeur FullStack</h1>
+                <p id="describ">Quisque lorem eros, ultruces commodo tortor ut, cursus veneanatis elie. Morbi
+                    aliquam malesuada. Pellentesque id mauris porttitor, cursus libero sit.
+                </p>
+                <button id="CVButton" value="Download"
+                        onclick="window.location.href='assets/VALLOIS Corentin CV - Blanc.pdf';">Télécharger le CV
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Partie compétences -->
+    <section id="skills">
+        <h2 id="titleSkill">Soft Skills</h2>
+
+        <div id="skillGrid">
+            <article id="firstSkill" class="skill">
+                <i class="fa fa-balance-scale" class="imgSkill"></i>
+                <!-- Texte sur java -->
+                <div id="firstTextSkill" class="textSkill">
+                    <h3>Mindset</h3>
+                    <p>Pellentesque interdum, diam sit amet pulvinar tincidunt, odio diam tincidunt lorem, a tempus
+                        mauris nulla nec tortor. Nulla urna dolor, pulvinar ut nunc eget, auctor ullamcorper leo.
+                        Proin a urna. </p>
+                </div>
+            </article>
+            <article id="secondSkill" class="skill">
+                <i class="fa fa-handshake-o" class="imgSkill"></i>
+                <!-- Texte sur le relationnel -->
+                <div id="secondTextSkill" class="textSkill">
+                    <h3>Relationnel</h3>
+                    <p>Vivamus dictum tincidunt aliquam. Sed laoreet id elit eu varius. Suspendisse lobortis nulla
+                        sit amet urna ultrices, non vulputate nulla convallis. Nulla vitae gravida justo, interdum
+                        semper lacus. Curabitur nec.</p>
+                </div>
+            </article>
+            <article id="thirdSkill" class="skill">
+                <i class="fa fa-cogs" class="imgSkill"></i>
+                <!-- Texte sur le c++ -->
+                <div id="thirdTextSkill" class="textSkill">
+                    <h3>Adaptabilité</h3>
+                    <p>Phasellus ultrices tortor nec augue porta, ut ullamcorper elit dapibus. Sed non varius
+                        sapien. Integer nec nulla ultrices, mollis lectus vitae, pulvinar magna. Pellentesque
+                        ornare, quam mollis finibus interdum, sem.</p>
+                </div>
+            </article>
+            <article id="fourthSkill" class="skill">
+                <i class="fas fa-bullhorn" class="imgSkill"></i>
+                <!-- Texte sur l'agilité -->
+                <div id="fourthTextSkill" class="textSkill">
+                    <h3>Agilité</h3>
+                    <p>Nunc ultrices velit sodales odio varius tincidunt. Vestibulum euismod convallis fermentum.
+                        Praesent venenatis leo dui, nec iaculis nisi ullamcorper eu. Nullam augue tortor, dictum non
+                        risus sed, facilisis gravida dolor. </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="comment">
+        <h2>Leurs avis</h2>
+
+        <div>
+            <!-- Contient les commentaires en ligne -->
+            <div class="slidesComments">
+                <!-- Permet de faire scroller les commentaires -->
+                <div class="commentGrid">
+
+                    <article id="firstComment" class="comment">
+                        <img src="assets/images/man.jpg" id="firstImgComment" class="imgComment">
+                        <div id="firstTextComment" class="textComment">
+                            <p>autonome</p>
+                            <span class="name">Robin Penea</span><br>
+                            <span class="enterprise">Gryt.io</span>
+                        </div>
+                    </article>
+
+                    <article id="secondComment" class="comment">
+                        <img src="assets/images/man2.jpg" id="secondImgComment" class="imgComment">
+                        <div id="secondTextComment" class="textComment">
+                            <p>aisance</p>
+                            <span class="name">Romain Gonçalves</span><br>
+                            <span class="enterprise">{3rgo.tech}</span>
+                        </div>
+                    </article>
+
+                    <article class="comment">
+                        <img src="assets/images/woman.jpg" class="imgComment">
+                        <div class="textComment">
+                            <p>motivé</p>
+                            <span class="name">Thibaud Magniez</span><br>
+                            <span class="enterprise">Freelance</span>
+                        </div>
+                    </article>
+
+                    <article class="comment">
+                        <img src="assets/images/woman2.jpg" class="imgComment">
+                        <div class="textComment">
+                            <p>discipliné.</p>
+                            <span class="name">Colombe van mastrigt</span><br>
+                            <span class="enterprise">Itescia</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="clients">
+        <h2 id="titleComment"> Hard Skills</h2>
+        <div>
+            <!-- Liste de 6 clients -->
+            <div class="slidesClients">
+                <div class="clientsGrid">
+                    <img src="assets/images/logos/java.png" alt="java">
+                    <img class="resize" src="assets/images/logos/HTML_fini.png" alt="Html">
+                    <img class="resize" src="assets/images/logos/css_fini.png" alt="css">
+                    <img src="assets/images/logos/js.png" alt="javascript">
+                    <img src="assets/images/logos/php.png" alt="php">
+                    <img src="assets/images/logos/mysql.png" alt="mysql">
+                </div>
             </div>
 
-            <!-- liste en haut à droite -->
-            <ul>
-                <li><a href="" class="active">Accueil</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
-        <!-- Partie avec la photo et le nom de la personne -->
-        <header>
-            <div id="headerContent">
-                <div id="headerPhoto">
-                    <img src="assets/images/headshot.png" alt="Photo" id="photo">
-                </div>
-                <div id="headerText">
-                    <h1>Développeur FullStack</h1>
-                    <p id="describ">Quisque lorem eros, ultruces commodo tortor ut, cursus veneanatis elie. Morbi
-                        aliquam malesuada. Pellentesque id mauris porttitor, cursus libero sit.
-                    </p>
-                    <button id="CVButton" value = "Download" onclick="window.location.href='assets/VALLOIS Corentin CV - Blanc.pdf';">Télécharger le CV</button>
+            <!-- Liste de 6 clients -->
+            <div class="slidesClients">
+                <div class="clientsGrid">
+                    <img src="assets/images/logos/python.svg" alt="python">
+                    <img src="assets/images/logos/mongodb.png" alt="mongodb">
+                    <img src="assets/images/logos/git.png" alt="git">
+                    <img src="assets/images/logos/react.png" alt="react native">
+                    <!-- <img src="assets/images/logos/doc.png" alt="<DOC/>">
+                       <img src="assets/images/logos/agile.png" alt="Agile.io">-->
                 </div>
             </div>
-        </header>
-
-        <!-- Partie compétences -->
-        <section id="skills">
-            <h2 id="titleSkill">Soft Skills</h2>
-
-            <div id="skillGrid">
-                <article id="firstSkill" class="skill">
-                    <i class="fa fa-balance-scale" class="imgSkill"></i>
-                    <!-- Texte sur java -->
-                    <div id="firstTextSkill" class="textSkill">
-                        <h3>Mindset</h3>
-                        <p>Pellentesque interdum, diam sit amet pulvinar tincidunt, odio diam tincidunt lorem, a tempus
-                            mauris nulla nec tortor. Nulla urna dolor, pulvinar ut nunc eget, auctor ullamcorper leo.
-                            Proin a urna. </p>
-                    </div>
-                </article>
-                <article id="secondSkill" class="skill">
-                    <i class="fa fa-handshake-o" class="imgSkill"></i>
-                    <!-- Texte sur le relationnel -->
-                    <div id="secondTextSkill" class="textSkill">
-                        <h3>Relationnel</h3>
-                        <p>Vivamus dictum tincidunt aliquam. Sed laoreet id elit eu varius. Suspendisse lobortis nulla
-                            sit amet urna ultrices, non vulputate nulla convallis. Nulla vitae gravida justo, interdum
-                            semper lacus. Curabitur nec.</p>
-                    </div>
-                </article>
-                <article id="thirdSkill" class="skill">
-                    <i class="fa fa-cogs" class="imgSkill"></i>
-                    <!-- Texte sur le c++ -->
-                    <div id="thirdTextSkill" class="textSkill">
-                        <h3>Adaptabilité</h3>
-                        <p>Phasellus ultrices tortor nec augue porta, ut ullamcorper elit dapibus. Sed non varius
-                            sapien. Integer nec nulla ultrices, mollis lectus vitae, pulvinar magna. Pellentesque
-                            ornare, quam mollis finibus interdum, sem.</p>
-                    </div>
-                </article>
-                <article id="fourthSkill" class="skill">
-                    <i class="fas fa-bullhorn" class="imgSkill"></i>
-                    <!-- Texte sur l'agilité -->
-                    <div id="fourthTextSkill" class="textSkill">
-                        <h3>Agilité</h3>
-                        <p>Nunc ultrices velit sodales odio varius tincidunt. Vestibulum euismod convallis fermentum.
-                            Praesent venenatis leo dui, nec iaculis nisi ullamcorper eu. Nullam augue tortor, dictum non
-                            risus sed, facilisis gravida dolor. </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="comment">
-            <h2>Leurs avis</h2>
-
-            <div>
-                <!-- Contient les commentaires en ligne -->
-                <div class="slidesComments">
-                    <!-- Permet de faire scroller les commentaires -->
-                    <div class="commentGrid">
-
-                        <article id="firstComment" class="comment">
-                            <img src="assets/images/man.jpg" id="firstImgComment" class="imgComment">
-                            <div id="firstTextComment" class="textComment">
-                                <p>autonome</p>
-                                <span class="name">Robin Penea</span><br>
-                                <span class="enterprise">Gryt.io</span>
-                            </div>
-                        </article>
-
-                        <article id="secondComment" class="comment">
-                            <img src="assets/images/man2.jpg" id="secondImgComment" class="imgComment">
-                            <div id="secondTextComment" class="textComment">
-                                <p>aisance</p>
-                                <span class="name">Romain Gonçalves</span><br>
-                                <span class="enterprise">{3rgo.tech}</span>
-                            </div>
-                        </article>
-
-                        <article class="comment">
-                            <img src="assets/images/woman.jpg" class="imgComment">
-                            <div class="textComment">
-                                <p>motivé</p>
-                                <span class="name">Thibaud Magniez</span><br>
-                                <span class="enterprise">Freelance</span>
-                            </div>
-                        </article>
-
-                        <article class="comment">
-                            <img src="assets/images/woman2.jpg" class="imgComment">
-                            <div class="textComment">
-                                <p>discipliné.</p>
-                                <span class="name">Colombe van mastrigt</span><br>
-                                <span class="enterprise">Itescia</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        </div>
 
 
-        </section>
+        <!-- Boutons pour le scroll des clients -->
+        <div class="indicators">
+            <button class="indicatorClients" onclick="currentClientsDiv(1)"></button>
+            <button class="indicatorClients" onclick="currentClientsDiv(2)"></button>
+        </div>
+    </section>
 
-        <section id="clients">
-            <h2 id="titleComment"> Hard Skills</h2>
-            <div>
-                <!-- Liste de 6 clients -->
-                <div class="slidesClients">
-                    <div class="clientsGrid">
-                        <img src="assets/images/logos/java.png" alt="java">
-                        <img class="resize" src="assets/images/logos/HTML_fini.png" alt="Html">
-                        <img class="resize" src="assets/images/logos/css_fini.png" alt="css">
-                        <img src="assets/images/logos/js.png" alt="javascript">
-                        <img src="assets/images/logos/php.png" alt="php">
-                        <img src="assets/images/logos/mysql.png" alt="mysql">
-                    </div>
-                </div>
+    <!-- Partie histoires vraies -->
+    <section id="stories">
+        <h2>Histoires vraies</h2>
 
-                <!-- Liste de 6 clients -->
-                <div class="slidesClients">
-                    <div class="clientsGrid">
-                        <img src="assets/images/logos/python.svg" alt="python">
-                        <img src="assets/images/logos/mongodb.png" alt="mongodb">
-                        <img src="assets/images/logos/git.png" alt="git">
-                        <img src="assets/images/logos/react.png" alt="react native">
-                       <!-- <img src="assets/images/logos/doc.png" alt="<DOC/>">
-                          <img src="assets/images/logos/agile.png" alt="Agile.io">-->
-                      </div>
-                  </div>
-              </div>
+        <div id="storyGrid">
 
 
-            
-            <!-- Boutons pour le scroll des clients -->
-            <div class="indicators">
-                <button class="indicatorClients" onclick="currentClientsDiv(1)"> </button>
-                <button class="indicatorClients" onclick="currentClientsDiv(2)"> </button>
-            </div>
-        </section>
-
-        <!-- Partie histoires vraies -->
-        <section id="stories">
-            <h2>Histoires vraies</h2>
-
-            <div id="storyGrid">
-
-
-                <div class="story">
-                    <i class="fas fa-stopwatch" class="imgStories"></i>
-                    <p class="storyName">Heures passées à coder</p>
-                    <p id="codingHour"class="storyNumber">1040</p>
-
-                </div>
-
-                <div class="story">
-                    <i class="fas fa-star" class="imgStories"></i>
-                    <p class="storyName">Projets réalisés</p>
-                    <p class="storyNumber">11</p>
-
-                </div>
-
-                <div class="story">
-                    <i class="fas fa-mug-hot" class="imgStories"></i>
-                    <p class="storyName">Cafés consommés</p>
-                    <p id="nbCaf"class="storyNumber">313</p>
-                </div>
+            <div class="story">
+                <i class="fas fa-stopwatch" class="imgStories"></i>
+                <p class="storyName">Heures passées à coder</p>
+                <p id="codingHour" class="storyNumber">1040</p>
 
             </div>
-        </section>
+
+            <div class="story">
+                <i class="fas fa-star" class="imgStories"></i>
+                <p class="storyName">Projets réalisés</p>
+                <p class="storyNumber">11</p>
+
+            </div>
+
+            <div class="story">
+                <i class="fas fa-mug-hot" class="imgStories"></i>
+                <p class="storyName">Cafés consommés</p>
+                <p id="nbCaf" class="storyNumber">313</p>
+            </div>
+
+        </div>
+    </section>
 
 
-        <footer>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/corentin-vallois/">LinkedIn</a></li>
-                <li><a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme">Itescia</a></li>
-                <li><a href="https://codingfactory.fr">Coding Factory</a></li>
-            </ul>
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/corentin-vallois/">LinkedIn</a></li>
+            <li><a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme">Itescia</a>
+            </li>
+            <li><a href="https://codingfactory.fr">Coding Factory</a></li>
+        </ul>
 
-            <span id="copyright">©2020 Tous droits réservés</span>
-        </footer>
-    </div>
-    <script src="assets/script.js" type='text/javascript'></script>
+        <span id="copyright">©2020 Tous droits réservés</span>
+    </footer>
+</div>
+<script src="assets/script.js" type='text/javascript'></script>
 </body>
 
 </html>

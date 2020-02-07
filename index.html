@@ -42,7 +42,7 @@
                     <p id="describ">Quisque lorem eros, ultruces commodo tortor ut, cursus veneanatis elie. Morbi
                         aliquam malesuada. Pellentesque id mauris porttitor, cursus libero sit.
                     </p>
-                    <button id="CVButton">Télécharger le CV</button>
+                    <button id="CVButton" value = "Download" onclick="window.location.href='assets/VALLOIS Corentin CV - Blanc.pdf';">Télécharger le CV</button>
                 </div>
             </div>
         </header>
@@ -147,7 +147,7 @@
         </section>
 
         <section id="clients">
-            <h2 id="titleComment">Clients</h2>
+            <h2 id="titleComment"> Hard Skills</h2>
             <div>
                 <!-- Liste de 6 clients -->
                 <div class="slidesClients">
@@ -181,40 +181,6 @@
                 <button class="indicatorClients" onclick="currentClientsDiv(1)"> </button>
                 <button class="indicatorClients" onclick="currentClientsDiv(2)"> </button>
             </div>
-
-            <!-- Script JavaScript pour le scroll des clients -->
-            <script>
-                var slideIndex = 1;
-                showClientsDivs(slideIndex);
-
-                function plusClientsDivs(n) {
-                    showClientsDivs(slideIndex += n);
-                }
-
-                function currentClientsDiv(n) {
-                    showClientsDivs(slideIndex = n);
-                }
-
-                function showClientsDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("slidesClients");
-                    var dots = document.getElementsByClassName("indicatorClients");
-                    if (n > x.length) {
-                        slideIndex = 1
-                    }
-                    if (n < 1) {
-                        slideIndex = x.length
-                    }
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" activeSliderIndicator", "");
-                    }
-                    x[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " activeSliderIndicator";
-                }
-            </script>
         </section>
 
         <!-- Partie histoires vraies -->
@@ -222,31 +188,26 @@
             <h2>Histoires vraies</h2>
 
             <div id="storyGrid">
-                <div class="story">
-                    <i class="fas fa-heart" class="imgStories"></i>
-                    <p class="storyName">Clients Heureux</p>
-                    <p class="storyNumber">578</p>
 
-                </div>
 
                 <div class="story">
                     <i class="fas fa-stopwatch" class="imgStories"></i>
-                    <p class="storyName">Heures à coder</p>
-                    <p class="storyNumber">4,780</p>
+                    <p class="storyName">Heures passées à coder</p>
+                    <p id="codingHour"class="storyNumber">1040</p>
 
                 </div>
 
                 <div class="story">
                     <i class="fas fa-star" class="imgStories"></i>
                     <p class="storyName">Projets réalisés</p>
-                    <p class="storyNumber">15</p>
+                    <p class="storyNumber">11</p>
 
                 </div>
 
                 <div class="story">
                     <i class="fas fa-mug-hot" class="imgStories"></i>
                     <p class="storyName">Cafés consommés</p>
-                    <p class="storyNumber">1,286</p>
+                    <p id="nbCaf"class="storyNumber">313</p>
                 </div>
 
             </div>
@@ -255,7 +216,7 @@
 
         <footer>
             <ul>
-                <li><a href="">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/corentin-vallois/">LinkedIn</a></li>
                 <li><a href="https://www.itescia.fr/informatique/codeur-informatique-temps-plein-alternance#programme">Itescia</a></li>
                 <li><a href="https://codingfactory.fr">Coding Factory</a></li>
             </ul>
@@ -263,7 +224,7 @@
             <span id="copyright">©2020 Tous droits réservés</span>
         </footer>
     </div>
-
+    <script src="assets/script.js" type='text/javascript'></script>
 </body>
 
 </html>

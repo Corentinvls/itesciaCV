@@ -41,7 +41,7 @@
 
     <section id="contact">
 
-        <form method="POST" id="formContact">
+        <form method="POST" id="formContact" action="assets/form.php">
             <h2 id="titleContact">Vos coordonnées :</h2>
 
             <div class="contactContent">
@@ -51,15 +51,15 @@
 
                 <input type="email" id="email" name="email" placeholder="Email" required>
 
-                <input type="tel" id="telephone" name="telephone" placeholder="Telephone" required>
+                <input type="tel" id="telephone" name="telephone" placeholder="Telephone" >
             </div>
 
 
             <h2>Méthode de communication préférée :</h2>
             <div class="contactContent">
                 <div id="communicationType">
-                    <input type="radio" id="mail" name="method" checked><label for="mail">Email</label>
-                    <input type="radio" id="sms" name="method"><label for="sms">SMS</label>
+                    <input type="radio" id="mail" name="mail" checked><label for="mail">Email</label>
+                    <input type="radio" id="sms" name="phone"><label for="sms">SMS</label>
 
                 </div>
             </div>
@@ -83,11 +83,10 @@
                 <textarea id="msg" name="userMessage" placeholder="Votre message"></textarea>
             </div>
 
+            <div id="wrapBouton">
+                <input type="submit" id="envoi">
+            </div>
         </form>
-
-        <div id="wrapBouton">
-            <input type="submit" form="formContact" id="envoi">
-        </div>
     </section>
 
 

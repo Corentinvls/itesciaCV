@@ -1,3 +1,6 @@
+
+
+
 //slider skills
 var slideIndex = 1;
 showClientsDivs(slideIndex);

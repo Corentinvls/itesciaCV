@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
     <!-- police -->
 
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-<div id="page">
+<div id="page" >
     <nav>
         <div id="logo">
             <img src="assets/images/favicon-32x32.svg" alt="Logo" id="icon">
@@ -58,29 +59,26 @@
             <h2>Méthode de communication préférée :</h2>
             <div class="contactContent">
                 <div id="communicationType">
-                    <input type="radio" id="mail" name="mail" checked><label for="mail">Email</label>
-                    <input type="radio" id="sms" name="phone"><label for="sms">SMS</label>
-
+                    <input type="radio" id="mail" name="com" value="Email" checked><label for="mail">Email</label>
+                    <input type="radio" id="sms" name="com" value="SMS" ><label for="sms">SMS</label>
                 </div>
             </div>
 
 
             <h2>Message :</h2>
             <div class="contactContent">
-                <select id="object" name="object">
-                    <!-- Possibilité d'utiliser un optiongroup pour le label -->
-                    <!-- mais de cette manière affiche un message par défaut -->
-                    <option value="label" disabled selected>Objet de votre message</option>
-                    <option value="employemment">Offre d'emploi</option>
-                    <option value="mission">Offre de mission</option>
-                    <option value="advice">Demande de conseil</option>
+                <select id="object" name="object" required>
+                    <option  disabled selected >Objet de votre message</option>
+                    <option value="Offre d'emploi">Offre d'emploi</option>
+                    <option value="Offre de mission">Offre de mission</option>
+                    <option value="Demande de conseil">Demande de conseil</option>
                     <option value="Autre">Autre</option>
                 </select>
             </div>
 
 
             <div>
-                <textarea id="msg" name="userMessage" placeholder="Votre message"></textarea>
+                <textarea id="msg" name="userMessage" placeholder="Votre message" required></textarea>
             </div>
 
             <div id="wrapBouton">

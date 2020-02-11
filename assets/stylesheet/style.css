@@ -466,10 +466,12 @@ h3 {
 	flex-direction: row;
 	justify-content: center;
 	min-height: 200px;
+	max-height: 250px;
 }
 
 /* image de chaque client */
-.clientsGrid img {
+
+.clientsGrid img,a {
 	align-self: center;
 	transition: .1s;
 	-webkit-filter: grayscale(100%);
@@ -480,8 +482,9 @@ h3 {
 	height: auto;
 }
 
+
 /* image de chaque client */
-.clientsGrid img:hover {
+.clientsGrid img,a:hover {
 	transition: .1s;
 
 	-webkit-filter: grayscale(0%);
@@ -489,10 +492,11 @@ h3 {
 	transform: scale(1.1);
 	opacity: 100%;
 }
-.resize{
+.resize,a{
 	transform: scale(0.6);
+
 }
-.resize:hover{
+.resize,a:hover{
 	transform: scale(0.7)!important;
 }
 

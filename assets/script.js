@@ -36,24 +36,34 @@ function showClientsDivs(n) {
 /*------ Section nombre pour histoire vrai ------*/
 
 const d1 = new Date(2019, 9, 9);
-const d2 = new Date();
-const dDiff = new Date(d2 - d1);
+var d2 = new Date();
+
+var dDiff = new Date(d2 - d1);
 //dif en jour
-let nbDay = (dDiff.getTime() / 86400000);
-//nombre d'heure avant d'avoir intégrer itescia les vancances
-let hcode = 80;
+var nbDay = (dDiff.getTime() / 86400000);
+//nombre d'heure avant d'avoir intégrer itescia  - les vancances
+let hcode = 240;
 
 while (nbDay >= 1) {
     for (let i = 0; i <= 6; i++) {
-        if (i !== 0 && i !== 6) {
+        if (i !== 0 && i!==6) {
             hcode += 8;
         }
     }
-    nbDay -= 6;
+    nbDay -= 7 ;
 }
 
 //c'est vital
 const nbCaf = Math.round(hcode / 3);
+console.log(hcode)
 
 document.getElementById("codingHour").innerHTML = hcode;
 document.getElementById("nbCaf").innerHTML = nbCaf;
+
+
+function verify() {
+    console.log("coucou");
+    let com = document.getElementsByName("com");
+    if(com === "SMS")
+        document.getElementById("telephone").required;
+}

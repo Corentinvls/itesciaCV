@@ -59,8 +59,8 @@
             <h2>Méthode de communication préférée :</h2>
             <div class="contactContent">
                 <div id="communicationType">
-                    <input type="radio" id="mail" name="com" value="Email" checked><label for="mail">Email</label>
-                    <input type="radio" id="sms" name="com" value="SMS" ><label for="sms">SMS</label>
+                    <input type="radio" id="mail" name="com" value="Email" checked onclick="mailtf()"  ><label for="mail">Email</label>
+                    <input type="radio" id="sms" name="com" value="SMS" onclick="smstf()"><label for="sms">SMS</label>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
             </div>
 
             <div id="wrapBouton">
-                <input type="submit" id="envoi" onfocus=verify()>
+                <input type="submit" id="envoi">
             </div>
         </form>
     </section>

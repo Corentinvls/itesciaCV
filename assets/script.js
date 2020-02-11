@@ -35,7 +35,7 @@ function showClientsDivs(n) {
 
 /*------ Section nombre pour histoire vrai ------*/
 
-const d1 = new Date(2019, 9, 9);
+const d1 = new Date(2019, 8, 9);
 var d2 = new Date();
 
 var dDiff = new Date(d2 - d1);
@@ -61,9 +61,9 @@ document.getElementById("codingHour").innerHTML = hcode;
 document.getElementById("nbCaf").innerHTML = nbCaf;
 
 
-function verify() {
-    console.log("coucou");
-    let com = document.getElementsByName("com");
-    if(com === "SMS")
-        document.getElementById("telephone").required;
+function smstf() {
+    document.getElementById("telephone").setAttribute("required", "true");
+}
+function mailtf() {
+    document.getElementById("telephone").removeAttribute("required")
 }

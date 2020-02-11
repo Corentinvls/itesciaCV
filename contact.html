@@ -67,8 +67,8 @@
 
             <h2>Message :</h2>
             <div class="contactContent">
-                <select id="object" name="object" required>
-                    <option  disabled selected >Objet de votre message</option>
+                <select id="object" name="object" onfocus="removePlaceHolder()" required>
+                    <option id="bye" value="" disabled selected >Objet de votre message</option>
                     <option value="Offre d'emploi">Offre d'emploi</option>
                     <option value="Offre de mission">Offre de mission</option>
                     <option value="Demande de conseil">Demande de conseil</option>

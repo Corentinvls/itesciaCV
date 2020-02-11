@@ -67,3 +67,6 @@ function smstf() {
 function mailtf() {
     document.getElementById("telephone").removeAttribute("required")
 }
+function removePlaceHolder(){
+    document.getElementById("bye").remove();
+}

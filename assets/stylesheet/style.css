@@ -655,7 +655,7 @@ select {
 
 	min-width: 110px;
 	/* ajout de la flèche personnalisée au rond cliqué */
-	background: url("/assets/images/fleche.svg") 98% / 15% no-repeat #f1f3f6;
+	background: url("../images/fleche.svg") 98% / 15% no-repeat #f1f3f6;
 	background-size: 5%;
 }
 

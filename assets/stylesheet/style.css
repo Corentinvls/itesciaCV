@@ -477,8 +477,8 @@ h3 {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	width: 100%;
-	opacity: 50%;
-	max-width: 165px;
+	opacity: 75%;
+	max-width: 250px;
 	height: auto;
 }
 
@@ -489,15 +489,15 @@ h3 {
 
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
-	transform: scale(1.1);
+	transform: scale(1.2);
 	opacity: 100%;
 }
 .resize,a{
-	transform: scale(0.6);
+	transform: scale(0.65);
 
 }
 .resize,a:hover{
-	transform: scale(0.7)!important;
+	transform: scale(0.75)!important;
 }
 
 /* si la fenêtre est trop petite on passe les clients en trop sur la ligne du dessous */

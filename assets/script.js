@@ -101,3 +101,8 @@ function mailtf() {
 function removePlaceHolder(){
     document.getElementById("bye").remove();
 }
+
+function myFunct() {
+    const url = "http://www.corentinvallois.fr";
+    setInterval(function() { window.location = url},5000);
+}

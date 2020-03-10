@@ -366,7 +366,7 @@ h3 {
 	padding: 1em 4em 1em 4em;
 	border-radius: 10px;
 	color: var(--main-text-color);
-	background: white url("../images/quote.png") no-repeat 8% 60%;
+	background: white url("../images/quote.png") no-repeat 1% 22%;
 	background-size: 1.2em;
 }
 

@@ -1,6 +1,37 @@
 
 
+//slider commentaire
+var commentIndex = 1;
+showCommentsDivs(commentIndex);
 
+
+function plusCommentsDivs(n) {
+    showCommentsDivs(commentIndex += n);
+}
+
+function currentCommentsDiv(n) {
+    showCommentsDivs(commentIndex = n);
+}
+
+function showCommentsDivs(n) {
+    let i;
+    const x = document.getElementsByClassName("commentGrid");
+    const dots = document.getElementsByClassName("indicatorComments");
+    if (n > x.length) {
+        commentIndex = 1
+    }
+    if (n < 1) {
+        commentIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("activeSliderIndicator", "");
+    }
+    x[commentIndex - 1].style.display = "flex";
+    dots[commentIndex - 1].className += " activeSliderIndicator";
+}
 //slider skills
 var slideIndex = 1;
 showClientsDivs(slideIndex);
@@ -29,7 +60,7 @@ function showClientsDivs(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" activeSliderIndicator", "");
     }
-    x[slideIndex - 1].style.display = "block";
+    x[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " activeSliderIndicator";
 }
 
@@ -60,7 +91,7 @@ console.log(hcode)
 document.getElementById("codingHour").innerHTML = hcode;
 document.getElementById("nbCaf").innerHTML = nbCaf;
 
-
+/*----------- Section form ------------*/
 function smstf() {
     document.getElementById("telephone").setAttribute("required", "true");
 }

@@ -138,6 +138,7 @@ header {
 /* conteneur de la photo */
 #headerPhoto {
 	padding: 25px;
+
 }
 
 /* photo utilisée dans le header */
@@ -151,6 +152,7 @@ header {
 		inset 9px 9px 9px 3px rgba(163, 177, 198, 0.5);
 	box-shadow: 9px 9px 9px rgba(163, 177, 198, 0.2), -9px -9px 9px rgba(255, 255, 255, 1),
 		inset 9px 9px 9px 3px rgba(163, 177, 198, 0.5);
+	filter: grayscale(100%);
 }
 
 /* conteneur du texte du header */
@@ -232,6 +234,7 @@ input[type=submit]:active,
 		margin-top: -0.6em;
 		line-height: 130%;
 	}
+
 }
 
 /* titre des sections de page*/
@@ -319,22 +322,17 @@ h3 {
 
 /* contient la grille de cartes */
 .slidesComments {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(4, calc(40%- 40px));
+	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	grid-template-rows: minmax(150px, 1fr);
+
+}
+.commentGrid{
+	display: none;
 }
 
-/* contient toutes les div commentaires */
-.commentGrid {
-	overflow-x: hidden;
-	white-space: nowrap;
-}
-
-/* affichage de la scrollbar au survol des avis */
-.commentGrid:hover {
-	overflow-x: scroll;
-}
 
 /* div contenant l'image, texte, nom, prénom */
 .comment {
@@ -395,27 +393,29 @@ h3 {
 /* si on passe en mode mobile*/
 @media (max-width: 700px) {
 	/* on affiche seulement un avis à la fois */
+	.commentGrid{
+		display: flex;
+		flex-direction: column;
+	}
 	.comment {
 		display: inline-block;
 		width: 100%;
-
 		background-image: url("../images/quote_reverse.png");
 		background-repeat: no-repeat;
-		background-position: 95% 100%;
+		background-position: 99% 101%;
 		background-size: 3em;
 	}
 
 	.textComment {
-		margin: 1em 2em;
-		padding: 1em 4em 1em 4em;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+	.imgComment{
+		bottom: -2.5em;
+		right: 2em;
 	}
 }
 
-/* utilisé par le javascript pour les clients */
-.mySlides {
-	display: none;
-	/*les diapositives sont masquées par défaut pour que le JS s'occupe de les afficher*/
-}
 
 /* pour le système de scroll via javascript */
 .sliders,
@@ -466,7 +466,7 @@ h3 {
 	flex-direction: row;
 	justify-content: center;
 	min-height: 200px;
-	max-height: 250px;
+
 }
 
 /* image de chaque client */

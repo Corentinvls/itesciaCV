@@ -500,6 +500,21 @@ h3 {
 	transform: scale(0.75)!important;
 }
 
+.resize2 ,.resize2 img{
+	transform: scale(0.75);!important;
+
+}
+.resize2:hover, .resize2 img:hover{
+	transform: scale(0.85)!important;
+}
+.resize3 ,.resize3 img{
+	transform: scale(0.80);!important;
+
+}
+.resize3:hover, .resize3 img:hover{
+	transform: scale(0.90)!important;
+}
+
 /* si la fenêtre est trop petite on passe les clients en trop sur la ligne du dessous */
 @media (max-width: 1120px) {
 	.clientsGrid {

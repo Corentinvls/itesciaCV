@@ -152,7 +152,7 @@ header {
 		inset 9px 9px 9px 3px rgba(163, 177, 198, 0.5);
 	box-shadow: 9px 9px 9px rgba(163, 177, 198, 0.2), -9px -9px 9px rgba(255, 255, 255, 1),
 		inset 9px 9px 9px 3px rgba(163, 177, 198, 0.5);
-	filter: grayscale(100%);
+
 }
 
 /* conteneur du texte du header */

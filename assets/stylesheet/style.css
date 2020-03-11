@@ -371,11 +371,10 @@ h3 {
 }
 
 /* paragraphe dans le commentaire*/
-.comment p {
+.textComment p {
 	font-size: smaller;
 	font-style: italic;
-	white-space: pre-line;
-	/*sinon le texte dépasse*/
+	text-align:justify;
 }
 
 /* nom dans le commentaire*/

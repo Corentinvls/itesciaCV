@@ -377,6 +377,10 @@ h3 {
 	text-align:justify;
 }
 
+#firstComment{
+	background-position: 95% 82%;
+}
+
 /* nom dans le commentaire*/
 .name {
 	color: var(--main-title-color);
@@ -401,7 +405,7 @@ h3 {
 		width: 100%;
 		background-image: url("../images/quote_reverse.png");
 		background-repeat: no-repeat;
-		background-position: 99% 101%;
+		background-position: 100% 101% !important;
 		background-size: 3em;
 	}
 
